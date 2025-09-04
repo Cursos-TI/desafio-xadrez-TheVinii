@@ -23,6 +23,20 @@ int main() {
         printf("Esquerda\n");
         k++;
     } while (k <= casasRainha);
+    // Cavalo
+    const int movimentosCavalo = 3; // número de movimentos em L que o cavalo fará
+    printf("\nMovimento do Cavalo em L, (para baixo e esquerda):\n");
 
+    for (int i = 1; i <= movimentosCavalo; i++) {
+        printf("\nMovimento L %d:\n", i);
+        // Loop aninhado para mover duas casas para baixo
+        int casasBaixo = 2;
+        int m = 1;
+        while (m <= casasBaixo) {
+            printf("Baixo\n");
+            m++;
+        }
+        // Depois move uma casa para esquerda
+        printf("Esquerda\n");
     return 0;
 }
